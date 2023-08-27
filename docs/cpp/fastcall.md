@@ -10,7 +10,7 @@ ms.assetid: bb5b9c8a-dfad-450c-9119-0ac2bc59544f
 
 **Microsoft Specific**
 
-The **`__fastcall`** calling convention specifies that arguments to functions are to be passed in registers, when possible. This calling convention only applies to the x86 architecture. The following list shows the implementation of this calling convention.
+The **`__fastcall`** calling convention specifies that arguments to functions are to be passed in registers, when possible. `enum` types will be passed in registers if their underlying type would be passed in registers. `class`, `struct` and `union` types are always pushed on the stack. This calling convention only applies to the x86 architecture. The following list shows the implementation of this calling convention.
 
 |Element|Implementation|
 |-------------|--------------------|
